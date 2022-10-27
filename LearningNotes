@@ -1,9 +1,5 @@
--Remember: strings must always be declared with 1 index more than the actual size of it. The '\0' is the reason of it.
-
--For this game, the user needs to type a letter. In this action, the user could accidentaly type more than 1 letter. To avoid problems with it, declare a vector
-letter[1]. This way, only one char will be stored, regardless the number of chars the user types down. Otherwise, problems could occur, e.g.: storing more than 1 char
-at a time in the string mistakenLetters. Memory garbage could be shown in the game, or even worse in this case, the secretWord could be shown, as it is storing random
-things in this string.
+-Remember: strings must always be declared with 1 index more than the actual size of it. The '\0' is the reason of it. If this is not done, memory garbage could be shown 
+in the game, or even worse in this case, the secretWord could be shown, as it is storing random things in this string. 
 
 -Commands from the library stdlib.h might need to be replaced for the script to run properly in systems other than windows, as these commands are "lent" from the windows
 system.
@@ -11,6 +7,6 @@ system.
 -Building and running properly with VSCode: ALWAYS: Ctrl+S and then Build+Run.
 
 -The Running of the script is not the same in the VSCode terminal and in the windows cmd prompt. In the windows cmd prompt and online gbd the script runs properly, 
-whereas in the VSCode terminal, problems still occur. (Such as secretWord being shown in the mistakenLetters array.)
+whereas in the VSCode terminal, problems still occur. (Such as secretWord being shown in the mistakenLetters array.) (dont know why)
 
 -Be aware: the powerShell or any other open console at the time you're building could be a problem.
