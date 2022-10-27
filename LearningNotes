@@ -8,6 +8,9 @@ things in this string.
 -Commands from the library stdlib.h might need to be replaced for the script to run properly in systems other than windows, as these commands are "lent" from the windows
 system.
 
--Building and running properly with VSCode: ALWAYS: Ctrl+S and then Build+Run. 
+-Building and running properly with VSCode: ALWAYS: Ctrl+S and then Build+Run.
+
+-The Running of the script is not the same in the VSCode terminal and in the windows cmd prompt. In the windows cmd prompt and online gbd the script runs properly, 
+whereas in the VSCode terminal, problems still occur. (Such as secretWord being shown in the mistakenLetters array.)
 
 -Be aware: the powerShell or any other open console at the time you're building could be a problem.
