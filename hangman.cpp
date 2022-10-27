@@ -7,20 +7,18 @@
 using namespace std;
 
 #define WORDSIZE 30
-#define DISCOVERED 1
-#define UNDISCOVERED 0
 #define CHANCES 6
 
 int main()
 {
     int wordSize = 0;
-    char secretWord[WORDSIZE], mistakenLetters[CHANCES], letter, playAgain;
+    char secretWord[WORDSIZE], mistakenLetters[CHANCES+1], letter, playAgain;
     int i = 0, chances, sizeMistakenLetters;
     bool mistake, gameWin, position[WORDSIZE], checkMistakenLetter;
 
     do {
         
-        for(i=0; i<CHANCES; i++) {
+        for(i=0; i<CHANCES+1; i++) {
             mistakenLetters[i] = '\0';    
         }
 
