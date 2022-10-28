@@ -6,7 +6,4 @@ system.
 
 -Building and running properly with VSCode: ALWAYS: Ctrl+S and then Build+Run.
 
--The Running of the script is not the same in the VSCode terminal and in the windows cmd prompt. In the windows cmd prompt and online gbd the script runs properly, 
-whereas in the VSCode terminal, problems still occur. (Such as secretWord being shown in the mistakenLetters array.) (dont know why)
-
--Be aware: the powerShell or any other open console at the time you're building could be a problem.
+-When you want to increment/decrement a variable that is a pointer, parenthesis are needed. E.g.: (*chances) --; (*sizeMistakenLetters) ++; Otherwise, it won't work.
